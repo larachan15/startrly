@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+html body {
+  font-family: 'Ubuntu Condensed';
+  height: 100%;
+  background-image: url("https://cdn.hipwallpaper.com/i/87/90/6B9W04.jpg")
+}
+
+/* div {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+} */
+
+nav {
+  padding: 10px 16px;
+  background-image: url("https://cdn.hipwallpaper.com/i/87/90/6B9W04.jpg")
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+nav ul{
+  /* width: 100px; */
+  display: flex;
+  list-style: none;
+  flex: 1;
+  font-family: 'Baloo Tammudu';
+  font-size: 20px;
+  color: black;
+}
+
+nav li:first-of-type:hover {
+  color: tomato;
+}
+
+nav li:nth-of-type(2):hover{
+  color: tomato;
+}
+
+nav li:nth-of-type(3):hover{
+  color: tomato;
+}
+
+.name {
+  margin: 20px;
+}
+.trynow {
+  margin-left: auto;
+  padding: 20px
+}
+.about {
+  padding: 20px;
+}
+
+#welcome {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  text-align: center;
+  background-color: darkcyan;
+  border: 10px solid black;
+  flex: 1;
+}
+
+#welcome p {
+  flex-basis: 30px;
+  height: 200px;
+}
+
+#button {
+    background-color: red;
+    width: 150px;
+    align-self: center;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#button:hover {
+  background-color: black;
+}
+
+#quote {
+  text-align: center;
+  background-color: white;
+  border: 10px solid black;
+  font-family: 'Courgette';
+  flex: 1;
+
+}
+
+#why {
+  background-color: tomato;
+  border: 10px solid black;
+  height: 400px;
+}
+
+#why h2 {
+  text-align: center;
+}
+
+#why ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+#why li {
+  width: 100%;
+  line-style: none;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#why img {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  align-self: center;
+  border-radius: 8px;
+}
+
+#quote2 {
+  background-color: white;
+  border: 10px solid black;
+  text-align: center;
+  font-family: 'Courgette';
+  flex: 1;
+}
+
+#meet {
+    text-align: center;
+    background-color: darkcyan;
+    border: 10px solid black;
+    flex: 1;
+}
+
+#meet ul {
+  list-style: none;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "o l h n f"
+    "a u s p z";
+}
+
+.one {
+  grid-area: o;
+}
+
+.two {
+  grid-area: u;
+}
+
+.three {
+  grid-area: h;
+}
+
+.four {
+  grid-area: p;
+}
+
+.five {
+  grid-area: f;
+}
+
+#meet li {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#meet img {
+  border-radius: 75%;
+  width: 100%;
+  text-align: center;
+}
+
+#sponsors {
+  text-align: center;
+  flex: 1;
+  /* border: 10px solid black; */
+}
+#sponsors ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 20px;
+}
+
+#footer {
+  background-color: tomato;
+  border: 10px solid black;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+#footer li {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template: auto/ repeat(4, 60px);
+  justify-content: center;
+}
+
+.container2 {
+  display: grid;
+  grid-template: auto / repeat(3, 90px);
+  justify-content: center;
+}
