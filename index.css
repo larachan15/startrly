@@ -1,0 +1,166 @@
+body * {
+  /* border: 1px solid black; */
+  font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  text-align: center;
+}
+
+/* Nav */
+.nav ul  {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.nav li {
+  padding: 2em 4em;
+}
+
+/* all section tags */
+section {
+  text-align: center;
+  margin: 6%;
+}
+
+section + section::before {
+  content: '';
+  display: block;
+  width: 96%;
+  height: 2px;
+  background-color: darkgrey;
+  margin-left: 2%;
+
+}
+
+/* Tagline section */
+.tagline {
+  text-align: center;
+  display: block;
+}
+
+.tagline h1 {
+  font-size: 5em;
+}
+
+.tagline sub {
+  font-size: 3em;
+  margin-bottom: 4em;
+  display: block;
+}
+
+.tagline a {
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-style: solid;
+  border-color: darkgrey;
+  border-radius: 15px;
+  border-width: 2px;
+}
+
+/* Quote section */
+.quote {
+  font: italic 1.5em sans-serif;
+  line-height: 1.5em;
+ }
+
+ .quote p {
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+ .quote blockquote {
+  margin: 10% 10% 0;
+}
+
+/* Why section */
+.why h2 {
+  margin: 10% 10% 6% 10%;
+}
+
+.why ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ .why li {
+  width: 30%;
+}
+
+ .why img {
+  float: left;
+  padding-right: 15px;
+}
+
+.why p {
+  text-align: left;
+}
+
+/* Team section */
+.team h2 {
+  margin: 10% 10% 6% 10%;
+  font-size: 2em;
+}
+
+.team ul li {
+  display: run-in;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team li {
+  margin: 0 8%;
+}
+
+.team img {
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  padding: 8px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkgrey;
+}
+
+.team span {
+  margin: 1em;
+  display: block;
+  text-align: center;
+}
+
+/* Sponsor section */
+.sponsor h2 {
+  margin-bottom: 10%;
+}
+.sponsor ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+/* Support section */
+.support {
+  display: inline-flex;
+  margin-bottom: 5%;
+}
+
+.support h3 {
+  padding-right: 10em;
+  text-align: left;
+}
+
+.support ul {
+  text-align: left;
+}
